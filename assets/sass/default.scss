@@ -13,3 +13,8 @@ body {
     flex-direction: column;
     background-color: var(--bg-color);
 }
+hr {
+    &.divider {
+        background-color: var(--);
+    }
+}
