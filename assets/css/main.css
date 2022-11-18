@@ -153,6 +153,9 @@ form {
   width: 100%;
   padding: 0 var(--space);
 }
+form .fields {
+  flex-direction: column;
+}
 form .field {
   position: relative;
   flex-direction: column;
@@ -234,6 +237,26 @@ form .field button:active {
   background-color: var(--green-active);
 }
 
+@media (min-width: 1200px) {
+  form {
+    max-width: 480px;
+  }
+  form .fields {
+    flex-direction: row;
+  }
+  form .fields .field {
+    margin-right: var(--space);
+  }
+  form .fields .field:last-child {
+    margin-right: 0;
+  }
+  form .fields .field textarea {
+    min-height: 250px;
+  }
+  form button {
+    max-width: 340px;
+  }
+}
 header.page-title {
   display: flex;
   flex-direction: column;
@@ -257,7 +280,6 @@ header.page-title hr {
   flex-direction: column;
   height: calc(100vh - 140px);
   overflow: auto;
-  margin-bottom: 80px;
 }
 .page .page-title {
   margin: var(--space);
@@ -274,6 +296,7 @@ header.page-title hr {
 }
 .page > header h1 {
   font-size: 23px;
+  padding-top: 15px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -365,6 +388,16 @@ header.page-title hr {
   background-color: var(--black-active);
 }
 
+@media (min-width: 1200px) {
+  .page > header {
+    justify-content: flex-start;
+    padding-left: 185px;
+    min-height: 160px;
+  }
+  .page > header h1 {
+    font-size: 32px;
+  }
+}
 #header {
   min-width: 320px;
   width: 100%;
