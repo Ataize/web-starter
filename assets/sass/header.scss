@@ -8,7 +8,7 @@
     .italy {
         width: 100%;
         position: absolute;
-        top:60px;
+        top: 60px;
         background-color: var(--white);
         border: none;
         border-top: var(--green) 6px solid;
@@ -32,7 +32,7 @@
         background-color: var(--gray-7);
         position: fixed;
         right: -300px;
-        top:0;
+        top: 0;
         z-index: 4;
         flex-direction: column;
         justify-content: space-between;
@@ -48,6 +48,7 @@
                     li {
                         &.divider {
                             display: flex;
+                            padding: 0;
                         }
                         &.hide-guest {
                             display: flex;
@@ -70,11 +71,11 @@
             ul {
                 margin: 0;
                 padding: 0;
-                margin-top: 249px;
+                margin-top: 190px;
                 width: 100%;
                 flex-direction: column;
                 li {
-                    padding: 14px 0;
+                    padding: 10px 0;
                     list-style: none;
                     justify-content: center;
                     a {
@@ -129,7 +130,7 @@
             @include button-green;
         }
     }
-    .button {
+    button {
         background: none;
         border: none;
         outline: none;
@@ -198,7 +199,7 @@
             width: 100%;
             height: 100px;
             flex-direction: row;
-            padding-left: 150px;
+            margin-left: 150px;
             justify-content: space-between;
             align-items: center;
             padding-bottom: 0;
@@ -239,6 +240,5 @@
                 }
             }
         }
-
     }
 }
