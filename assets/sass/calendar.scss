@@ -51,8 +51,8 @@
     }
     .days {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows:  12vw 12vw 12vw 12vw 12vw;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows:  repeat(5, 12vw);
         grid-gap: 10px;
         color: var(--dark-0);
         li {
@@ -89,6 +89,33 @@
 
             }
 
+        }
+    }
+}
+@media (min-width: 992px) {
+    .calendar {
+        max-width: 992px;
+        .month {
+            margin: var(--space) 0;
+            h2 {
+                font-size: 44px;
+            }
+            .btn-today {
+                display: flex;
+            }
+        }
+        .weekdays {
+            li {
+                font-size: 21px;
+                font-weight: bold;
+            }
+        }
+        .days {
+            grid-template-rows: repeat(5, calc(992px / 7));
+            li {
+                font-size: 38px;
+
+            }
         }
     }
 }
