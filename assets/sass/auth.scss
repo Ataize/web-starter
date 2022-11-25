@@ -81,12 +81,17 @@
                             margin-top: 10px;
                         }
                         &:hover {
-                            color: var(--black);
+                            color: var(--gray-11);
 
                         }
                         &:active {
                             color: var(--black);
                         }
+                    }
+                }
+                &.forget {
+                    .actions {
+                        justify-content: flex-end;
                     }
                 }
             }
