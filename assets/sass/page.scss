@@ -152,6 +152,7 @@ header {
         }
         button[type=submit], a.black {
             @include button-black;
+            padding: var(--space);
         }
     }
     &.blue {

@@ -470,6 +470,7 @@ header.page-title hr {
   color: var(--black);
   background-color: var(--black);
   color: var(--white);
+  padding: var(--space);
 }
 .page footer.fixed button[type=submit]:hover, .page footer.fixed a.black:hover {
   background-color: var(--black-10);
