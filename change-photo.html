@@ -88,127 +88,36 @@
         <hr class="italy" />
     </header>
 
-    <section class="page blue" id="schedules-summary">
-
+    <section id="change-photo" class="page">
         <header>
-            <h1>RESUMO DO PEDIDO <small>CONFIRA OS DETALHES DO PEDIDO</small></h1>
-           
+            <h1>Mudar foto</h1>
         </header>
-
+       
         <main>
+         <header class="page-title">
+            <h1>Foto Atual</h1>
+            <hr/>
+         </header>
 
-            <form>
-                
-                <div class="field">
-                    <input type="text" name="payment" id="payment" readonly value="Cartão de crédito">
-                    <label for="payment">Forma de Pagamento</label>
-                </div>
-                <div class="field">
-                    <input type="text" name="creditcard" id="creditcard" readonly value="***1234">
-                    <label for="creditcard">CARTÃO FINAL</label>
-                </div>
-                <div class="field">
-                    <input type="text" name="initialments" id="initialments" readonly value="À VISTA">
-                    <label for="initialments">Parcelas</label>
-                </div>
-                <div class="field">
-                    <input type="text" name="services" id="services" readonly value="1">
-                    <label for="services">Quantidade de Serviços</label>
-                </div>
-                <div class="field">
-                    <input type="text" name="schedules_at" id="schedules_at" readonly value="25 de Novembro de 2022 às 9:00">
-                    <label for="schedules_at">DATA DO SERVIÇO</label>
-                </div>
-                <div class="field">
-                    <input type="text" name="total" id="total" readonly value="R$ 400,00">
-                    <label for="total">VALOR TOTAL</label>
-                </div>
+         <form>
+            <img src="/assets/images/user@4x.png" alt="Foto Atual" id="photo-preview">
+
+            <input type="file" name="photo" id="file">
+
+            <input type="hidden" name="x"/>
+            <input type="hidden" name="y"/>
+            <input type="hidden" name="width"/>
+            <input type="hidden" name="height"/>
+
+            <button type="button" class="choose-photo">Escolher foto</button>
+         </form>
 
                 <footer class="fixed">
-                    <a href="schedules-time-options.html">Voltar</a>
-                    <button type="submit">Continuar</button>
+                    <button type="submit">Salvar</button>
                 </footer>
-
             </form>
-
         </main>
-
-        <aside>
-            <header>Resumo</header>
-
-            <section>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <footer>
-                <button type="button" id="btn-summary-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
-                        <path d="M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z"
-                            transform="translate(-6 16) rotate(-90)" fill="#707070" />
-                    </svg>
-                </button>
-
-                <div>
-                    <span>Total</span>
-                    <span class="total">R$0,00</span>
-                </div>
-
-            </footer>
-        </aside>
-
     </section>
-
 </body>
 
 </html>

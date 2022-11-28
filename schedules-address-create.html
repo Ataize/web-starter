@@ -88,127 +88,81 @@
         <hr class="italy" />
     </header>
 
-    <section class="page blue" id="schedules-summary">
-
+    <section id="schedules-address-form" class="page blue">
+        
         <header>
-            <h1>RESUMO DO PEDIDO <small>CONFIRA OS DETALHES DO PEDIDO</small></h1>
-           
+            <h1>Novo Endereço</h1>
+            <hr/>
         </header>
-
+       
         <main>
 
-            <form>
+        
+          <form actions="schedules-summary.html">
+            
+            <div class="fields zipcode">
+                <div class="field">
+                    <input type="text" name="zipcode" id="zipcode"/>
+                    <label for="zipcode">CEP</label>
+                </div>
+                <div class="field">
+                    <button type="button" id="btn-search">Buscar</button>
+                </div>
+            </div>
+
+            <div class="fields adress-number">
+
+                <div class="field">
+                    <input type="text" name="address" id="address"/>
+                    <label for="adress">Endereço</label>
+                </div>
+
+                <div class="field">
+                    <input type="number" name="address" id="address"/>
+                    <label for="address">Número</label>
+                </div>
                 
+            </div>
+           
                 <div class="field">
-                    <input type="text" name="payment" id="payment" readonly value="Cartão de crédito">
-                    <label for="payment">Forma de Pagamento</label>
+                    <input type="text" name="complement" id="complement"/>
+                    <label for="complement">Complemento</label>
                 </div>
+
                 <div class="field">
-                    <input type="text" name="creditcard" id="creditcard" readonly value="***1234">
-                    <label for="creditcard">CARTÃO FINAL</label>
+                    <input type="text" name="district" id="district"/>
+                    <label for="district">Bairro</label>
                 </div>
+           
                 <div class="field">
-                    <input type="text" name="initialments" id="initialments" readonly value="À VISTA">
-                    <label for="initialments">Parcelas</label>
-                </div>
-                <div class="field">
-                    <input type="text" name="services" id="services" readonly value="1">
-                    <label for="services">Quantidade de Serviços</label>
-                </div>
-                <div class="field">
-                    <input type="text" name="schedules_at" id="schedules_at" readonly value="25 de Novembro de 2022 às 9:00">
-                    <label for="schedules_at">DATA DO SERVIÇO</label>
-                </div>
-                <div class="field">
-                    <input type="text" name="total" id="total" readonly value="R$ 400,00">
-                    <label for="total">VALOR TOTAL</label>
+                    <input type="text" name="city" id="city"/>
+                    <label for="city">Cidade</label>
                 </div>
 
-                <footer class="fixed">
-                    <a href="schedules-time-options.html">Voltar</a>
-                    <button type="submit">Continuar</button>
-                </footer>
+                <div class="fields">
 
-            </form>
-
-        </main>
-
-        <aside>
-            <header>Resumo</header>
-
-            <section>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <footer>
-                <button type="button" id="btn-summary-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
-                        <path d="M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z"
-                            transform="translate(-6 16) rotate(-90)" fill="#707070" />
-                    </svg>
-                </button>
-
-                <div>
-                    <span>Total</span>
-                    <span class="total">R$0,00</span>
+                    <div class="field">
+                        <input type="text" name="state" id="state"/>
+                        <label for="state">Estado</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="country" id="country"/>
+                        <label for="country">País</label>
+                    </div>
                 </div>
+                
+          
 
+            <footer class="fixed">
+                <a href="schedules-adrress.html">Voltar</a>
+                <button type="submit">Cadastrar</button>
             </footer>
-        </aside>
+
+          </form>
+            
+         </main>
 
     </section>
-
 </body>
 
 </html>
